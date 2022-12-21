@@ -398,62 +398,68 @@ export default function Second() {
                   className="avatar-text"
                   style={{ display: "inline", paddingLeft: "10px" }}
                 >
-                  <b>Description</b>
-                  <br />
-                </div>
-                <br />
-                Lorem ispum dolor sit amet, consectetuer adipiscing elit.
-                Maecenas porttitor congue massa. Fusce posuere, magna sed
-                pulvinar ultricies, purus lectus malesuada libero, sit amet
-                commodo magna eros quis urna.
-                <div>
-                  <input className="second-step-input" />
-                  <div
-                    className="avatar-text"
-                    style={{ display: "inline", paddingLeft: "10px" }}
-                  >
-                    <b>Category</b>
-                    <br />
+                  <div>
+                    <b>Description</b>
                   </div>
-                  <br />
 
-                  <InputLabel sx={{ color: "#000" }}>Category</InputLabel>
-                  <Select
-                    sx={{
-                      width: "125.2vh",
-                      height: "45px",
-                      backgroundColor: "#D9D9D940",
-                      border: "0px solid rgba(0, 0, 0, 0.25)",
-                      borderRadius: "5px",
-                    }}
-                    labelId="demo-simple-select-label"
-                    //   id="demo-simple-select"
-                    value={age}
-                    label="Age"
-                    onChange={handleChange}
-                    //   onChange={handleChange}
-                  >
-                    <MenuItem value={1}>API Testing</MenuItem>
-                    <MenuItem value={2}>Website Testing</MenuItem>
-                    <MenuItem value={3}>Network Security Testing</MenuItem>
-                    <MenuItem value={4}>iOS</MenuItem>
-                    <MenuItem value={5}>Android</MenuItem>
-                    <MenuItem value={6}>IOT</MenuItem>
-                    <MenuItem value={7}>Hardware Testing</MenuItem>
-                    <MenuItem value={8}>Cloud Solution</MenuItem>
-                    <MenuItem value={9}>Others</MenuItem>
-                  </Select>
+                  <div>
+                    Lorem ispum dolor sit amet, consectetuer adipiscing elit.
+                    Maecenas porttitor congue massa. Fusce posuere, magna sed
+                    pulvinar ultricies, purus lectus malesuada libero, sit amet
+                    commodo magna eros quis urna.
+                  </div>
+                  <input className="second-step-input" />
+                </div>
 
-                  <DropDownOption value={age} />
-                  <br />
+                <div>
+                  <div>
+                    <div className="avatar-text">
+                      <b>Category</b>
+                    </div>
 
-                  <label>
-                    <b>Tags (Optional)</b>
+                    <div>
+                      <Select
+                        sx={{
+                          width: "125.2vh",
+                          height: "45px",
+                          backgroundColor: "#D9D9D940",
+                          border: "0px solid rgba(0, 0, 0, 0.25)",
+                          borderRadius: "5px",
+                        }}
+                        labelId="demo-simple-select-label"
+                        //   id="demo-simple-select"
+                        value={age}
+                        label="Age"
+                        onChange={handleChange}
+                        //   onChange={handleChange}
+                      >
+                        <MenuItem value={1}>API Testing</MenuItem>
+                        <MenuItem value={2}>Website Testing</MenuItem>
+                        <MenuItem value={3}>Network Security Testing</MenuItem>
+                        <MenuItem value={4}>iOS</MenuItem>
+                        <MenuItem value={5}>Android</MenuItem>
+                        <MenuItem value={6}>IOT</MenuItem>
+                        <MenuItem value={7}>Hardware Testing</MenuItem>
+                        <MenuItem value={8}>Cloud Solution</MenuItem>
+                        <MenuItem value={9}>Others</MenuItem>
+                      </Select>
+                    </div>
+                  </div>
+
+                  <div>
+                    <DropDownOption value={age} />
+                  </div>
+
+                  <div>
+                    <div>
+                      <b>Tags (Optional)</b>
+                    </div>
+
                     <input
                       style={{ height: "60px" }}
                       className="second-step-input"
                     />
-                  </label>
+                  </div>
 
                   <button
                     className="button-2-back"

@@ -184,6 +184,7 @@ export default function FinalStep() {
                       placeholder="Type Text"
                     />
                   </label>
+                  <br />
                   <div
                     className="avatar-text"
                     style={{
@@ -194,7 +195,6 @@ export default function FinalStep() {
                     }}
                   >
                     <b>Category</b>
-                    <br />
                   </div>
                   <br />
                   <FormControl sx={{ marginLeft: "2%", marginTop: "1%" }}>
@@ -218,6 +218,7 @@ export default function FinalStep() {
                       <MenuItem value={30}>Asset 3</MenuItem>
                     </Select>
                   </FormControl>
+                  <br />
                   <div
                     className="avatar-text"
                     style={{
@@ -228,7 +229,6 @@ export default function FinalStep() {
                     }}
                   >
                     <b>Upload File</b>
-                    <br />
                   </div>
                   <br />
                   <label style={{ paddingLeft: "1vh", paddingTop: "50vh" }}>
@@ -238,6 +238,7 @@ export default function FinalStep() {
                       type="file"
                     />
                   </label>
+                  <br />
                   <div
                     className="avatar-text"
                     style={{
@@ -308,6 +309,7 @@ export default function FinalStep() {
                       placeholder="Type Text"
                     />
                   </label>
+                  <br />
                   <div
                     className="avatar-text"
                     style={{
@@ -328,7 +330,8 @@ export default function FinalStep() {
                       placeholder="Type Text"
                     />
                   </label>
-
+                  <br />
+                  <br />
                   <label style={{ paddingLeft: "1vh", paddingTop: "50vh" }}>
                     <b>Share Target Summary</b>
                     <input
@@ -391,6 +394,8 @@ export default function FinalStep() {
                       placeholder="Type Text"
                     />
                   </label>
+                  <br />
+                  <br />
 
                   <label style={{ paddingLeft: "1vh", paddingTop: "50vh" }}>
                     <b>Share Target Summary</b>

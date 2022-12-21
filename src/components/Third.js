@@ -145,6 +145,7 @@ export default function Third() {
                     <b>Name</b>
                     <input className="third-step-input" />
                   </label>
+                  <br />
                   <label style={{ paddingLeft: "3vh", paddingTop: "50vh" }}>
                     <b>Email</b>
                     <input
@@ -152,6 +153,8 @@ export default function Third() {
                       className="second-step-input"
                     />
                   </label>
+                  <br />
+                  <br />
                   <label>
                     <b>Share Target Summary</b>
                     <input

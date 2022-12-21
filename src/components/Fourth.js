@@ -160,6 +160,8 @@ export default function Fourth() {
                       className="second-step-input"
                     />
                   </label>
+                  <br />
+                  <br />
                   <label>
                     <b>Share Target Summary</b>
                     <input
@@ -176,7 +178,6 @@ export default function Fourth() {
                   >
                     Back
                   </button>
-
                   <button
                     type="submit"
                     className="button-1-step"
@@ -184,7 +185,6 @@ export default function Fourth() {
                   >
                     Send Invitation
                   </button>
-
                   <div
                     onClick={handleSkipClick}
                     style={{
