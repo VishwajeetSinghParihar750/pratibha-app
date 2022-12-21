@@ -18,6 +18,8 @@ import Third from "./components/Third";
 import Fourth from "./components/Fourth";
 import FinalStep from "./components/FinalStep";
 
+import Homepage from "./components/Report/Homepage/Homepage";
+
 function App() {
   return (
     <Routes>
@@ -44,6 +46,8 @@ function App() {
       <Route path="/reset-pass-new" element={<NewPass />} />
       <Route path="/mobileotp" element={<MobileOtp />} />
       <Route path="/emailotp" element={<EmailOtp />} />
+
+      <Route path="/report" element={<Homepage />}></Route>
     </Routes>
   );
 }
