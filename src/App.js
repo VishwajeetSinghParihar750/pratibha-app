@@ -8,22 +8,33 @@ import MobileOtp from "./components/MobileOtp";
 import EmailOtp from "./components/EmailOtp";
 import ResponsiveDrawer from "./components/Userlayout/Sidenavbar";
 import Userlayout from "./components/Userlayout/Userlayout";
-import Dashboard from "./components/Dashboard";
+import Dashboard from "./components/Dashboard/Dashboard";
 import Team from "./components/Team";
 import Addnewmember from "./components/Addnewmember";
 import Steplayout from "./components/Steplayout/Steplayout";
-import First from "./components/First";
-import Second from "./components/Second";
-import Third from "./components/Third";
-import Fourth from "./components/Fourth";
-import FinalStep from "./components/FinalStep";
+import First from "./components/Steps/First";
+import Second from "./components/Steps/Second";
+import Third from "./components/Steps/Third";
+import Fourth from "./components/Steps/Fourth";
+import FinalStep from "./components/Steps/FinalStep";
+
+import Protected from "./Util/Protected";
 
 import Homepage from "./components/Report/Homepage/Homepage";
 
 function App() {
   return (
     <Routes>
-      <Route exact path="/" element={<Userlayout />}>
+      <Route
+        exact
+        path="/"
+        element={
+          // implement protected later when backend veifies login properly
+          // <Protected>
+          <Userlayout />
+          // </Protected>
+        }
+      >
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="team" element={<Team />} />
         <Route path="addnewmem" element={<Addnewmember />} />

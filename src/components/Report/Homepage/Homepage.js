@@ -1,5 +1,5 @@
 import React from "react";
-import Report from "../AddReport/Report";
+import Report from "../AddReport/ReportVisuals";
 import PopupReport from "../AddReport/PopupReport";
 
 import styles from "./PartialCode.module.scss";

@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Addnewmember() {
-  return (
-    <div>Addnewmember</div>
-  )
+  return <div>Addnewmember</div>;
 }
 
-export default Addnewmember
+export default Addnewmember;

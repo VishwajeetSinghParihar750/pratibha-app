@@ -15,17 +15,17 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-import UserNode from "./UserNode";
+import UserNode from "../UserNode";
 import Avatar from "@mui/material/Avatar";
 import Grid from "@mui/material/Grid";
-import DataEntry from "./DataEntry";
+import DataEntry from "../DataEntry";
 import { Divider, Stack } from "@mui/material";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteOutlineOutlinedIcon from "@mui/icons-material/DeleteOutlineOutlined";
 import { Link } from "react-router-dom";
 
 import { useSelector, useDispatch } from "react-redux";
-import { stepsSliceActions } from "../store/stepsSlice";
+import { stepsSliceActions } from "../../store/stepsSlice";
 import { useNavigate } from "react-router-dom";
 
 const inputField = {
@@ -75,24 +75,13 @@ const rows = [
   createData("Mobile Application ", "6/10", "Analyst", " "),
 ];
 
-export default function Fourth() {
+export default function Third() {
   const dispatch = useDispatch();
   const activeStep = useSelector((state) => state.steps.activeStep);
 
   let navigate = useNavigate();
 
   const handleNextClick = (e) => {
-    //
-    //
-    //
-    //
-    dispatch(stepsSliceActions.setActiveStep(activeStep + 1));
-
-    // Somewhere in your code, e.g. inside a handler:
-    navigate(`/steps/${activeStep + 2}`);
-  };
-
-  const handleSkipClick = (e) => {
     dispatch(stepsSliceActions.setActiveStep(activeStep + 1));
 
     // Somewhere in your code, e.g. inside a handler:
@@ -137,14 +126,13 @@ export default function Fourth() {
         <div>
           <div className="user-top">
             <Grid container>
-              {/* <Grid><Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" /></Grid> */}
-
               <form action="" onSubmit={handleSubmit}>
+                {/* <Grid><Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" /></Grid> */}
                 <div
                   className="avatar-text"
                   style={{ display: "inline", paddingLeft: "10px" }}
                 >
-                  <b>Invite Company</b>
+                  <b>Team</b>
                   <br />
                 </div>
                 <br />
@@ -153,6 +141,11 @@ export default function Fourth() {
                 pulvinar ultricies, purus lectus malesuada libero, sit amet
                 commodo magna eros quis urna.
                 <div>
+                  <label style={{ paddingLeft: "3vh", paddingTop: "50vh" }}>
+                    <b>Name</b>
+                    <input className="third-step-input" />
+                  </label>
+                  <br />
                   <label style={{ paddingLeft: "3vh", paddingTop: "50vh" }}>
                     <b>Email</b>
                     <input
@@ -178,26 +171,14 @@ export default function Fourth() {
                   >
                     Back
                   </button>
+
                   <button
                     type="submit"
                     className="button-1-step"
                     style={{ float: "right", marginTop: "2%" }}
                   >
-                    Send Invitation
+                    Next Step
                   </button>
-                  <div
-                    onClick={handleSkipClick}
-                    style={{
-                      float: "right",
-                      marginTop: "3.2%",
-                      textDecoration: "none",
-                      marginRight: "8%",
-                      color: "#2D3B51 !important",
-                      cursor: "pointer",
-                    }}
-                  >
-                    Skip
-                  </div>
                 </div>
               </form>
             </Grid>

@@ -15,17 +15,17 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-import UserNode from "./UserNode";
+import UserNode from "../UserNode";
 import Avatar from "@mui/material/Avatar";
 import Grid from "@mui/material/Grid";
-import DataEntry from "./DataEntry";
+import DataEntry from "../DataEntry";
 import { Divider, Stack } from "@mui/material";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteOutlineOutlinedIcon from "@mui/icons-material/DeleteOutlineOutlined";
 import { Link } from "react-router-dom";
 
 import { useSelector, useDispatch } from "react-redux";
-import { stepsSliceActions } from "../store/stepsSlice";
+import { stepsSliceActions } from "../../store/stepsSlice";
 import { useNavigate } from "react-router-dom";
 
 const inputField = {
